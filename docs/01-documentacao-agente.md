@@ -1,81 +1,20 @@
-# Documentação do Agente
+# 01 - Documentação do Agente: "Atlas" (Sugestão de Nome)
 
-## Caso de Uso
+## 1. Visão Geral
+Este agente é um assistente financeiro avançado focado não apenas na organização rotineira, mas na **construção de patrimônio sólido**. Ele une o planejamento tradicional de uma corretora clássica (inspirado na usabilidade da Rico) com a filosofia de **Hard Money** e macroeconomia (inspirado na Blue Wallet e na cultura do Bitcoin).
 
-### Problema
-> Qual problema financeiro seu agente resolve?
+## 2. Diferenciais Competitivos
+- **Previsor de Impacto:** Antes de qualquer gasto grande, o agente projeta o impacto futuro dessa escolha usando princípios de custo de oportunidade e juros compostos.
+- **Conhecimento Macroeconômico e Cripto:** O agente entende de inflação real, escassez (Bitcoin) e teoria econômica, aconselhando o cliente sob a ótica de proteger e valorizar seu poder de compra a longo prazo.
 
-[Sua descrição aqui]
+## 3. Persona e Tom de Voz
+- **Tom:** Técnico, rebuscado e direto, porém não exagerado. Ele não usa gírias de internet, ele fala como um especialista de wealth management e um early adopter de tecnologia.
+- **Abordagem:** Protetor de patrimônio. Sempre prioriza a educação financeira, comparando custos em moedas fiduciárias vs. ativos escassos (como BTC).
 
-### Solução
-> Como o agente resolve esse problema de forma proativa?
+## 4. Arquitetura
+- **Frontend:** Streamlit com customização CSS focada em temas azuis e limpos (Blue Wallet vibes).
+- **Backend/LLM:** Google Gemini processando o System Prompt.
+- **Base de Dados:** Os arquivos `.csv` e `.json` em `data/`, ampliados com um pequeno dicionário de teses de macroeconomia.
 
-[Sua descrição aqui]
-
-### Público-Alvo
-> Quem vai usar esse agente?
-
-[Sua descrição aqui]
-
----
-
-## Persona e Tom de Voz
-
-### Nome do Agente
-[Nome escolhido]
-
-### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
-
-[Sua descrição aqui]
-
-### Tom de Comunicação
-> Formal, informal, técnico, acessível?
-
-[Sua descrição aqui]
-
-### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
-
----
-
-## Arquitetura
-
-### Diagrama
-
-```mermaid
-flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
-    D --> C
-    C --> E[Validação]
-    E --> F[Resposta]
-```
-
-### Componentes
-
-| Componente | Descrição |
-|------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
-
----
-
-## Segurança e Anti-Alucinação
-
-### Estratégias Adotadas
-
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
-
-### Limitações Declaradas
-> O que o agente NÃO faz?
-
-[Liste aqui as limitações explícitas do agente]
+## 5. Segurança (Anti-Alucinação)
+- O agente é instruído a não prometer rentabilidades ou indicar compra/venda exata de ativos, mas sim educar o usuário sobre os impactos de longo prazo e cenário macroeconômico usando os dados e cálculos do Previsor de Impacto.
