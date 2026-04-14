@@ -2,6 +2,9 @@
 
 Bem-vindo ao repositório oficial do **Atlas**, um agente financeiro inteligente desenvolvido como parte do Desafio de IA Generativa da [Digital Innovation One (DIO)](https://www.dio.me/).
 
+Video no youtube explicando o projeto, o video ficou rápido pois o tempo máximo era de apenas 3 minutos. 
+(https://youtu.be/jtzs4puqXpA)
+
 Enquanto as ferramentas do mercado apenas exibem saldos passivamente, o Atlas atua como um parceiro e conselheiro patrimonial. Desenvolvido sob a ótica da **Escola Austríaca de Economia** e alinhado aos princípios de preservação do poder de compra (Hard Money), ele ajuda usuários a fugirem de gastos impulsivos e ciladas contábeis.
 
 ## 🚀 Principais Funcionalidades
